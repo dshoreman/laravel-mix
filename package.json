@@ -30,6 +30,13 @@
         "setup",
         "src"
     ],
+    "ava": {
+        "babel": {
+            "compileAsTests": [
+                "test/features/helpers/*"
+            ]
+        }
+    },
     "dependencies": {
         "@babel/core": "^7.2.0",
         "@babel/plugin-proposal-object-rest-spread": "^7.2.0",
@@ -73,8 +80,9 @@
         "yargs": "^15.3.1"
     },
     "devDependencies": {
+        "@ava/babel": "^1.0.1",
         "@babel/preset-react": "^7.0.0",
-        "ava": "^1.4.1",
+        "ava": "^3.11.1",
         "coffee-loader": "^0.9.0",
         "coffeescript": "^2.2.3",
         "eol": "^0.9.1",
